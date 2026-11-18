@@ -255,7 +255,7 @@ const CONFIG = {
   // Moet exact overeenkomen met wat in Azure -> Authentication staat (en met de GitHub-pagina-URL):
   redirectUri: 'https://rozalapp.github.io/rozal-tv/',
 };
-const API = 'https://rozal-booking-fn-ehbcbmdeb8h4e7dj.westeurope-01.azurewebsites.net/api/tv-data';
+const API = 'https://rozal-tv-fn-b5gzfsh7e6a7e7cp.westeurope-01.azurewebsites.net/api/tv-data';
 const KEY = new URLSearchParams(location.search).get('key');   // met ?key=… haalt het dashboard zijn gegevens zonder inloggen op (voor de Chromecast)
 const LITE = !!KEY || new URLSearchParams(location.search).has('lite');   // rustige weergave voor zwakke apparaten
 if (LITE) document.getElementById('canvas').classList.add('lite');
